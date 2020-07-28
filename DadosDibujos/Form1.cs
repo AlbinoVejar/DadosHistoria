@@ -21,9 +21,10 @@ namespace DadosDibujos
 
         private void GenerarHistoria(object sender, EventArgs e)
         {
-            var numeroRandom = new Random().Next(1, 6);
-            //MessageBox.Show(numeroRandom.ToString());
-            GetImageTool(numeroRandom);
+            var numeroRandomTool = new Random().Next(1, 7);
+            var numeroRandomPersonaje = new Random().Next(1, 3);
+            GetImageTool(numeroRandomTool);
+            GetImagePersonaje(numeroRandomPersonaje);
             //pnlHerramienta.BackgroundImage = GetPathTool(numeroRandom.ToString());
         }
         private void Salir(object sender, EventArgs e)
@@ -35,23 +36,22 @@ namespace DadosDibujos
         {
             switch (name)
             {
-                case 1:
-                    pnlHerramienta.BackgroundImage = Properties.Resources.t1;break;
-                case 2:
-                    pnlHerramienta.BackgroundImage = Properties.Resources.t2;break;
-                case 3:
-                    pnlHerramienta.BackgroundImage = Properties.Resources.t3; break;
-                case 4:
-                    pnlHerramienta.BackgroundImage = Properties.Resources.t4; break;
-                case 5:
-                    pnlHerramienta.BackgroundImage = Properties.Resources.t5; break;
-                case 6:
-                    pnlHerramienta.BackgroundImage = Properties.Resources.t6; break;
-                default:
-                    pnlHerramienta.BackgroundImage = Properties.Resources.t1; break;
+                case 1: pnlHerramienta.BackgroundImage = Properties.Resources.t1;break;
+                case 2: pnlHerramienta.BackgroundImage = Properties.Resources.t2;break;
+                case 3: pnlHerramienta.BackgroundImage = Properties.Resources.t3; break;
+                case 4: pnlHerramienta.BackgroundImage = Properties.Resources.t4; break;
+                case 5: pnlHerramienta.BackgroundImage = Properties.Resources.t5; break;
+                case 6: pnlHerramienta.BackgroundImage = Properties.Resources.t6; break;
             }
-            //string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            //return string.Format("{0}Resources\\t{1}.png", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")), name);
+        }
+
+        private void GetImagePersonaje(int name)
+        {
+            switch (name)
+            {
+                case 1: pnlSujeto.BackgroundImage = Properties.Resources.p1;break;
+                case 2: pnlSujeto.BackgroundImage = Properties.Resources.p2;break;
+            }
         }
 
         private void Animacion()

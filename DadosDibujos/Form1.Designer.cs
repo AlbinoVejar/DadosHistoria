@@ -30,12 +30,12 @@
         {
             this.pnlRol = new System.Windows.Forms.Panel();
             this.pnlSujeto = new System.Windows.Forms.Panel();
-            this.pnlHerramienta = new System.Windows.Forms.Panel();
             this.btnGenerar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pnlHerramienta = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // pnlRol
@@ -61,18 +61,6 @@
             this.pnlSujeto.Name = "pnlSujeto";
             this.pnlSujeto.Size = new System.Drawing.Size(200, 232);
             this.pnlSujeto.TabIndex = 1;
-            // 
-            // pnlHerramienta
-            // 
-            this.pnlHerramienta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlHerramienta.AutoSize = true;
-            this.pnlHerramienta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnlHerramienta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlHerramienta.Location = new System.Drawing.Point(576, 34);
-            this.pnlHerramienta.Name = "pnlHerramienta";
-            this.pnlHerramienta.Size = new System.Drawing.Size(200, 232);
-            this.pnlHerramienta.TabIndex = 2;
             // 
             // btnGenerar
             // 
@@ -119,11 +107,23 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Fira Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(104, 278);
+            this.label3.Location = new System.Drawing.Point(88, 278);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 16);
+            this.label3.Size = new System.Drawing.Size(80, 16);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Rol";
+            this.label3.Text = "Accesorio";
+            // 
+            // pnlHerramienta
+            // 
+            this.pnlHerramienta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlHerramienta.AutoSize = true;
+            this.pnlHerramienta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlHerramienta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlHerramienta.Location = new System.Drawing.Point(576, 34);
+            this.pnlHerramienta.Name = "pnlHerramienta";
+            this.pnlHerramienta.Size = new System.Drawing.Size(200, 232);
+            this.pnlHerramienta.TabIndex = 2;
             // 
             // Form1
             // 
